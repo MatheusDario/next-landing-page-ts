@@ -1,0 +1,449 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Lading Page",
+        "slug": "lading-page",
+        "createdAt": "2023-12-09T23:14:38.288Z",
+        "updatedAt": "2024-01-01T01:08:40.486Z",
+        "publishedAt": "2023-12-09T23:14:40.266Z",
+        "footer_text": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "text": "Desenvolvido por Matheus Dario",
+                "type": "text"
+              }
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "id": 1,
+            "__component": "section.section-two-columns",
+            "title": "LADING PAGE DESENVOLVIDA EM HTML, CSS E JS",
+            "description": "One domain where we see high value is in training LLMs on reference documentation, enabling developers to more quickly find solutions or get answers about the purpose or behavior of code snippets. MDNs mission is to provide a blueprint for a better internet and empower a new generation of developers and content creators to build it. We see a path forward to “overlay” useful AI-driven helpers on top of MDNs canonical web dev documentation to aid developers in new ways. Of course, human-authored canonica",
+            "image": {
+              "data": {
+                "id": 2,
+                "attributes": {
+                  "name": "barber.svg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 1144,
+                  "height": 715,
+                  "formats": null,
+                  "hash": "barber_63ec0556f4",
+                  "ext": ".svg",
+                  "mime": "image/svg+xml",
+                  "size": 20.22,
+                  "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702163614/barber_63ec0556f4.svg",
+                  "previewUrl": null,
+                  "provider": "cloudinary",
+                  "provider_metadata": {
+                    "public_id": "barber_63ec0556f4",
+                    "resource_type": "image"
+                  },
+                  "createdAt": "2023-12-09T23:13:35.761Z",
+                  "updatedAt": "2023-12-09T23:13:35.761Z"
+                }
+              }
+            },
+            "metada": {
+              "id": 1,
+              "name": "intro",
+              "section_id": "intro",
+              "background": true
+            }
+          },
+          {
+            "id": 1,
+            "__component": "section.section-content",
+            "title": "TOP 3 TRABALHOS",
+            "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam laborum officiis iste beatae obcaecati repellat, et veritatis provident culpa iusto id sequi corrupti magni repellendus, placeat corporis esse architecto.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi facilis, autem, cupiditate consequuntur, rem accusantium impedit nesciunt architecto corporis possimus! Sed laborum veniam quod voluptatem expedita, quasi ratione possimus!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt explicabo dignissimos. Distinctio autem praesentium corporis suscipit nostrum, beatae asperiores reprehenderit quasi ratione, vitae minus iusto ipsa reiciendis et! Obcaecati?",
+            "metada": {
+              "id": 2,
+              "name": "top3",
+              "section_id": "top3jobs",
+              "background": false
+            }
+          },
+          {
+            "id": 1,
+            "__component": "section.section-grid",
+            "title": "DESCRIÇÃO DOS PRINCIPAIS TRABALHOS",
+            "description": "Uma breve descrição do asunto que está por vim",
+            "metada": {
+              "id": 3,
+              "name": "description",
+              "section_id": "description",
+              "background": true
+            },
+            "text_grid": [
+              {
+                "id": 1,
+                "title": "Titulo 1",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam laborum officiis iste beatae obcaecati repellat, et veritatis provident culpa iusto id sequi corrupti magni repellendus, placeat corporis esse architecto."
+              },
+              {
+                "id": 2,
+                "title": "Titulo 2",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam laborum officiis iste beatae obcaecati repellat, et veritatis provident culpa iusto id sequi corrupti magni repellendus, placeat corporis esse architecto."
+              },
+              {
+                "id": 3,
+                "title": "Titulo 3",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam laborum officiis iste beatae obcaecati repellat, et veritatis provident culpa iusto id sequi corrupti magni repellendus, placeat corporis esse architecto."
+              }
+            ],
+            "image_grid": []
+          },
+          {
+            "id": 2,
+            "__component": "section.section-grid",
+            "title": "GALERIA",
+            "description": "Breve descrição",
+            "metada": {
+              "id": 4,
+              "name": "gallery",
+              "section_id": "gallery",
+              "background": false
+            },
+            "text_grid": [],
+            "image_grid": [
+              {
+                "id": 1,
+                "images": {
+                  "data": [
+                    {
+                      "id": 5,
+                      "attributes": {
+                        "name": "ferrari.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 360,
+                        "height": 360,
+                        "formats": {
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/thumbnail_ferrari_b04d5b11bc.jpg",
+                            "hash": "thumbnail_ferrari_b04d5b11bc",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_ferrari.jpg",
+                            "path": null,
+                            "size": 9.12,
+                            "width": 156,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_ferrari_b04d5b11bc",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "ferrari_b04d5b11bc",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 34.17,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/ferrari_b04d5b11bc.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "ferrari_b04d5b11bc",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:25.119Z",
+                        "updatedAt": "2023-12-10T00:19:25.119Z"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "attributes": {
+                        "name": "bmw.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 360,
+                        "height": 360,
+                        "formats": {
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/thumbnail_bmw_653b2050bc.jpg",
+                            "hash": "thumbnail_bmw_653b2050bc",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_bmw.jpg",
+                            "path": null,
+                            "size": 7.83,
+                            "width": 156,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_bmw_653b2050bc",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "bmw_653b2050bc",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 35.88,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/bmw_653b2050bc.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "bmw_653b2050bc",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:25.203Z",
+                        "updatedAt": "2023-12-10T00:19:25.203Z"
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "attributes": {
+                        "name": "lamborginhi.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 480,
+                        "height": 360,
+                        "formats": {
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/thumbnail_lamborginhi_aa4b0d94c3.jpg",
+                            "hash": "thumbnail_lamborginhi_aa4b0d94c3",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_lamborginhi.jpg",
+                            "path": null,
+                            "size": 9.12,
+                            "width": 208,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_lamborginhi_aa4b0d94c3",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "lamborginhi_aa4b0d94c3",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 32.36,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/lamborginhi_aa4b0d94c3.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "lamborginhi_aa4b0d94c3",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:25.265Z",
+                        "updatedAt": "2023-12-10T00:19:25.265Z"
+                      }
+                    },
+                    {
+                      "id": 8,
+                      "attributes": {
+                        "name": "mercedes.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 540,
+                        "height": 360,
+                        "formats": {
+                          "small": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/small_mercedes_cd10b1e920.jpg",
+                            "hash": "small_mercedes_cd10b1e920",
+                            "mime": "image/jpeg",
+                            "name": "small_mercedes.jpg",
+                            "path": null,
+                            "size": 39.99,
+                            "width": 500,
+                            "height": 333,
+                            "provider_metadata": {
+                              "public_id": "small_mercedes_cd10b1e920",
+                              "resource_type": "image"
+                            }
+                          },
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/thumbnail_mercedes_cd10b1e920.jpg",
+                            "hash": "thumbnail_mercedes_cd10b1e920",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_mercedes.jpg",
+                            "path": null,
+                            "size": 11.04,
+                            "width": 234,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_mercedes_cd10b1e920",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "mercedes_cd10b1e920",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 46.83,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/mercedes_cd10b1e920.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "mercedes_cd10b1e920",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:25.436Z",
+                        "updatedAt": "2023-12-10T00:19:25.436Z"
+                      }
+                    },
+                    {
+                      "id": 9,
+                      "attributes": {
+                        "name": "road.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 240,
+                        "height": 360,
+                        "formats": {
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/thumbnail_road_fae120670f.jpg",
+                            "hash": "thumbnail_road_fae120670f",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_road.jpg",
+                            "path": null,
+                            "size": 3.04,
+                            "width": 104,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_road_fae120670f",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "road_fae120670f",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 14.59,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167565/road_fae120670f.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "road_fae120670f",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:26.074Z",
+                        "updatedAt": "2023-12-10T00:19:26.074Z"
+                      }
+                    },
+                    {
+                      "id": 10,
+                      "attributes": {
+                        "name": "audi.jpg",
+                        "alternativeText": null,
+                        "caption": null,
+                        "width": 360,
+                        "height": 360,
+                        "formats": {
+                          "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167565/thumbnail_audi_ca65926b59.jpg",
+                            "hash": "thumbnail_audi_ca65926b59",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_audi.jpg",
+                            "path": null,
+                            "size": 8.69,
+                            "width": 156,
+                            "height": 156,
+                            "provider_metadata": {
+                              "public_id": "thumbnail_audi_ca65926b59",
+                              "resource_type": "image"
+                            }
+                          }
+                        },
+                        "hash": "audi_ca65926b59",
+                        "ext": ".jpg",
+                        "mime": "image/jpeg",
+                        "size": 45.4,
+                        "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167565/audi_ca65926b59.jpg",
+                        "previewUrl": null,
+                        "provider": "cloudinary",
+                        "provider_metadata": {
+                          "public_id": "audi_ca65926b59",
+                          "resource_type": "image"
+                        },
+                        "createdAt": "2023-12-10T00:19:28.473Z",
+                        "updatedAt": "2023-12-10T00:19:28.473Z"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "menu": {
+          "id": 1,
+          "logo_link": "#intro",
+          "logo_text": "Logo",
+          "logo": {
+            "data": {
+              "id": 4,
+              "attributes": {
+                "name": "undraw_logo_design_re_gfu6.svg",
+                "alternativeText": null,
+                "caption": null,
+                "width": 731,
+                "height": 522,
+                "formats": null,
+                "hash": "undraw_logo_design_re_gfu6_5d2765762e",
+                "ext": ".svg",
+                "mime": "image/svg+xml",
+                "size": 5.68,
+                "url": "https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702166691/undraw_logo_design_re_gfu6_5d2765762e.svg",
+                "previewUrl": null,
+                "provider": "cloudinary",
+                "provider_metadata": {
+                  "public_id": "undraw_logo_design_re_gfu6_5d2765762e",
+                  "resource_type": "image"
+                },
+                "createdAt": "2023-12-10T00:04:52.922Z",
+                "updatedAt": "2023-12-10T00:04:52.922Z"
+              }
+            }
+          },
+          "menu_links": [
+            {
+              "id": 1,
+              "url": "#intro",
+              "link_text": "Intro",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 2,
+              "url": "#top3",
+              "link_text": "Top3",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 3,
+              "url": "#description",
+              "link_text": "Descrição",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 4,
+              "url": "#gallery",
+              "link_text": "Galeria",
+              "open_in_new_tab": false
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

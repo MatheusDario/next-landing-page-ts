@@ -1,0 +1,1 @@
+# Está é a minha implementação de páginas utilizando Next/React/TS
