@@ -11,19 +11,6 @@ Page.propTypes = {
 };
 
 export const getStaticPaths = async () => {
-  // const url = config.url;
-  // const raw = await fetch(url);
-  // const json = await raw.json();
-  // const data = json.data;
-
-  // const mySlug = data.map((page) => {
-  //   const {
-  //     attributes: { slug },
-  //   } = page;
-
-  //   return { slug };
-  // });
-
   return {
     paths: [{ params: { slug: 'info-produto' } }],
     fallback: false,

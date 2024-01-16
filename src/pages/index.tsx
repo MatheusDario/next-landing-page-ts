@@ -1,12 +1,16 @@
-import P from 'prop-types';
 import { App } from '../templates/App';
 import { loadPages } from '../api/load-pages';
+import { GetStaticProps } from 'next';
 
-export default function Index({ data = null }) {
+export type IndexProps = {
+  data: [];
+};
+
+export default function Index({ data = null }: IndexProps) {
   return <App data={data} />;
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps<IndexProps> = async () => {
   let data = null;
 
   try {
@@ -26,8 +30,4 @@ export const getStaticProps = async () => {
       data,
     },
   };
-};
-
-Index.propTypes = {
-  data: P.object,
 };

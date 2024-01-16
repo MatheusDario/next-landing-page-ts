@@ -21,7 +21,7 @@ exports[`<SectionBackground /> should render with barkground dark 1`] = `
 <div>
   <div
     class="c0"
-    id="id-8129-673455792598"
+    id="id-7227-768203925766"
   >
     <div
       class="c1"
@@ -51,7 +51,7 @@ exports[`<SectionBackground /> should render with barkground light 1`] = `
 <div>
   <div
     class="c0"
-    id="id-2019-86970719203"
+    id="id-6025-102791773939"
   >
     <div
       class="c1"

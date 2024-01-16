@@ -92,7 +92,7 @@ exports[`<GridSection /> should render with background 1`] = `
 <div>
   <div
     class="c0"
-    id="id-4136-145880420152"
+    id="id-5908-719008077645"
   >
     <div
       class="c1"
@@ -263,7 +263,7 @@ exports[`<GridSection /> should render without background 1`] = `
 <div>
   <div
     class="c0"
-    id="id-3763-8645921303637"
+    id="id-8716-739357928927"
   >
     <div
       class="c1"

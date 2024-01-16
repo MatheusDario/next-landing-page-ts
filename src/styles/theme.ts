@@ -38,4 +38,4 @@ export const theme = {
     mobile: '@media (max-width:768px)',
     tests: '(max-width:768px)',
   },
-};
+} as const;
