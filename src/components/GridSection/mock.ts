@@ -1,3 +1,5 @@
+import { GridSectionProps } from '.';
+
 export default {
   $background: false,
   title: 'DESCRIÇÃO DOS PRINCIPAIS TRABALHOS',
@@ -25,4 +27,4 @@ export default {
       sequi corrupti magni repellendus, placeat corporis esse architecto.`,
     },
   ],
-};
+} as GridSectionProps;

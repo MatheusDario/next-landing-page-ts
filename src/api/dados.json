@@ -4,9 +4,9 @@
       "id": 2,
       "attributes": {
         "title": "Lading Page",
-        "slug": "lading-page",
+        "slug": "landing-page",
         "createdAt": "2023-12-09T23:14:38.288Z",
-        "updatedAt": "2024-01-01T01:08:40.486Z",
+        "updatedAt": "2024-01-13T16:10:42.697Z",
         "publishedAt": "2023-12-09T23:14:40.266Z",
         "footer_text": [
           {
@@ -121,7 +121,7 @@
                       "id": 5,
                       "attributes": {
                         "name": "ferrari.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "ferrari",
                         "caption": null,
                         "width": 360,
                         "height": 360,
@@ -154,14 +154,14 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:25.119Z",
-                        "updatedAt": "2023-12-10T00:19:25.119Z"
+                        "updatedAt": "2024-01-01T15:53:27.083Z"
                       }
                     },
                     {
                       "id": 6,
                       "attributes": {
                         "name": "bmw.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "bmw",
                         "caption": null,
                         "width": 360,
                         "height": 360,
@@ -194,14 +194,14 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:25.203Z",
-                        "updatedAt": "2023-12-10T00:19:25.203Z"
+                        "updatedAt": "2024-01-01T15:53:19.175Z"
                       }
                     },
                     {
                       "id": 7,
                       "attributes": {
                         "name": "lamborginhi.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "lamborginhi",
                         "caption": null,
                         "width": 480,
                         "height": 360,
@@ -234,14 +234,14 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:25.265Z",
-                        "updatedAt": "2023-12-10T00:19:25.265Z"
+                        "updatedAt": "2024-01-01T15:53:11.488Z"
                       }
                     },
                     {
                       "id": 8,
                       "attributes": {
                         "name": "mercedes.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "mercedes",
                         "caption": null,
                         "width": 540,
                         "height": 360,
@@ -289,14 +289,14 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:25.436Z",
-                        "updatedAt": "2023-12-10T00:19:25.436Z"
+                        "updatedAt": "2024-01-01T15:53:02.088Z"
                       }
                     },
                     {
                       "id": 9,
                       "attributes": {
                         "name": "road.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "road",
                         "caption": null,
                         "width": 240,
                         "height": 360,
@@ -329,14 +329,14 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:26.074Z",
-                        "updatedAt": "2023-12-10T00:19:26.074Z"
+                        "updatedAt": "2024-01-01T15:52:46.130Z"
                       }
                     },
                     {
                       "id": 10,
                       "attributes": {
                         "name": "audi.jpg",
-                        "alternativeText": null,
+                        "alternativeText": "audi",
                         "caption": null,
                         "width": 360,
                         "height": 360,
@@ -369,7 +369,7 @@
                           "resource_type": "image"
                         },
                         "createdAt": "2023-12-10T00:19:28.473Z",
-                        "updatedAt": "2023-12-10T00:19:28.473Z"
+                        "updatedAt": "2024-01-01T15:52:54.138Z"
                       }
                     }
                   ]
@@ -404,7 +404,7 @@
                   "resource_type": "image"
                 },
                 "createdAt": "2023-12-10T00:04:52.922Z",
-                "updatedAt": "2023-12-10T00:04:52.922Z"
+                "updatedAt": "2024-01-01T22:24:00.485Z"
               }
             }
           },
@@ -417,7 +417,7 @@
             },
             {
               "id": 2,
-              "url": "#top3",
+              "url": "#top3jobs",
               "link_text": "Top3",
               "open_in_new_tab": false
             },
@@ -431,6 +431,12 @@
               "id": 4,
               "url": "#gallery",
               "link_text": "Galeria",
+              "open_in_new_tab": false
+            },
+            {
+              "id": 13,
+              "url": "info-produto",
+              "link_text": "Word + Exel",
               "open_in_new_tab": false
             }
           ]

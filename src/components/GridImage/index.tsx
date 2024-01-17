@@ -1,9 +1,20 @@
-/* eslint-disable react/prop-types */
-//import P from 'prop-types';
 import * as Styled from './styled';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { Text } from '../Text';
+
+export type GridImageElementProps = {
+  altText: string;
+  srcImg: [];
+};
+
+export type GridImageProps = {
+  title: string;
+  description: string;
+  $background?: boolean;
+  $sectionid?: string;
+  grid?: GridImageElementProps[];
+};
 
 export const GridImage = ({
   title,
@@ -11,7 +22,7 @@ export const GridImage = ({
   grid,
   $background = false,
   $sectionid = '',
-}) => {
+}: GridImageProps) => {
   return (
     <SectionBackground $background={$background} $sectionid={$sectionid}>
       <Styled.Container>
@@ -30,17 +41,3 @@ export const GridImage = ({
     </SectionBackground>
   );
 };
-
-/*
-  GridImage.propTypes = {
-  title: P.string.isRequired,
-  description: P.string.isRequired,
-  $background: P.bool,
-  grid: P.arrayOf(
-    P.shape({
-      altText: P.string.isRequired,
-      srcImg: P.string.isRequired,
-    }),
-  ),
-};
-*/

@@ -1,4 +1,5 @@
-import { GridTwoColumns } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { GridTwoColumns, GridTwoColumnsProps } from '.';
 import mock from './mock';
 
 export default {
@@ -8,8 +9,8 @@ export default {
   argTypes: {
     children: { type: 'string' },
   },
-};
-export const Template = (args) => {
+} as Meta;
+export const Template: StoryFn<GridTwoColumnsProps> = (args) => {
   return (
     <div>
       <GridTwoColumns {...args} />

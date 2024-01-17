@@ -1,15 +1,21 @@
-import P from 'prop-types';
 import * as Styled from './styled';
 import { SectionBackground } from '../SectionBackground';
 import { Text } from '../Text';
 import { Heading } from '../Heading';
+
+export type GridContentProps = {
+  title: string;
+  html: string;
+  $background?: boolean;
+  $sectionid?: string;
+};
 
 export const GridContent = ({
   title,
   html,
   $background = false,
   $sectionid = '',
-}) => {
+}: GridContentProps) => {
   return (
     <SectionBackground $background={$background} $sectionid={$sectionid}>
       <Styled.Container>
@@ -22,11 +28,4 @@ export const GridContent = ({
       </Styled.Container>
     </SectionBackground>
   );
-};
-
-GridContent.propTypes = {
-  title: P.string.isRequired,
-  html: P.string.isRequired,
-  $background: P.bool,
-  $sectionid: P.string,
 };

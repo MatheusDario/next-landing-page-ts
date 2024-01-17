@@ -1,8 +1,20 @@
-import P from 'prop-types';
 import * as Styled from './styled';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { Text } from '../Text';
+
+export type GridSectionElementProps = {
+  title: string;
+  description: string;
+};
+
+export type GridSectionProps = {
+  title: string;
+  description: string;
+  $background?: boolean;
+  $sectionid?: string;
+  grid: GridSectionElementProps[];
+};
 
 export const GridSection = ({
   title,
@@ -10,7 +22,7 @@ export const GridSection = ({
   $background = false,
   grid,
   $sectionid = '',
-}) => {
+}: GridSectionProps) => {
   return (
     <SectionBackground $background={$background} $sectionid={$sectionid}>
       <Styled.Container>
@@ -36,17 +48,4 @@ export const GridSection = ({
       </Styled.Container>
     </SectionBackground>
   );
-};
-
-GridSection.propTypes = {
-  title: P.string.isRequired,
-  description: P.string.isRequired,
-  $background: P.bool,
-  $sectionid: P.string,
-  grid: P.arrayOf(
-    P.shape({
-      title: P.string.isRequired,
-      description: P.string.isRequired,
-    }),
-  ).isRequired,
 };

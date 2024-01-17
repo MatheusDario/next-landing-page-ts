@@ -1,8 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { GridImage } from '.';
-import { renderTheme } from '../../styles/render-theme';
-
-import mock from './mock';
 
 describe('<GridImage />', () => {
   // it('should render grid with title, description and images', () => {

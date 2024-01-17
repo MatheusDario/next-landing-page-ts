@@ -1,4 +1,5 @@
-import { SectionContainer } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { SectionContainer, SectionContainerProps } from '.';
 
 export default {
   title: 'SectionContainer',
@@ -17,10 +18,10 @@ export default {
     ),
   },
   argTypes: {
-    children: { type: '' },
+    children: { type: 'string' },
   },
-};
-export const Template = (args) => {
+} as Meta;
+export const Template: StoryFn<SectionContainerProps> = (args) => {
   return (
     <div>
       <SectionContainer {...args} />

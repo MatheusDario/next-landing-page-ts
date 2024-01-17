@@ -1,3 +1,5 @@
+import { GridContentProps } from '.';
+
 export default {
   title: 'O titulo do Grid Content',
   html: `<h1>HTML Ipsum Presents</h1>
@@ -28,4 +30,4 @@ export default {
   }
   </code></pre>`,
   background: false,
-};
+} as GridContentProps;

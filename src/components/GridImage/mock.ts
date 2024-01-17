@@ -1,3 +1,5 @@
+import { GridImageProps } from '.';
+
 export default {
   $background: false,
   title: 'GALERIA',
@@ -5,7 +7,7 @@ export default {
   grid: [
     {
       altText: 'Test 1',
-      srcImg: 'https://source.unsplash.com/random/360x360?r=1',
+      srcImg: [],
     },
     {
       altText: 'Test 2',
@@ -28,4 +30,4 @@ export default {
       srcImg: 'https://source.unsplash.com/random/360x360?r=6',
     },
   ],
-};
+} as GridImageProps;

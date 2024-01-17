@@ -2,7 +2,11 @@
 import styled, { css } from 'styled-components';
 import { Title } from '../Heading/styled';
 
-export const Container = styled.div`
+type Background = {
+  $background: boolean;
+};
+
+export const Container = styled.div<Background>`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -28,13 +32,9 @@ export const TextContainer = styled.div`
   `}
 `;
 
-export const ImgContainer = styled.div`
-  ${({ theme }) => css``}
-`;
+export const ImgContainer = styled.div``;
 
 export const Image = styled.img`
-  ${({ theme }) => css`
     width: 100%;
     height: auto;
-  `}
-`;
+  `;
