@@ -3,5 +3,8 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/support/setupTests.js"
+ ],
 }

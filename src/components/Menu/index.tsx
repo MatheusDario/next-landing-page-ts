@@ -1,14 +1,18 @@
-/* eslint-disable no-unused-vars */
-import P from 'prop-types';
 import * as Styled from './styled';
 import { SectionContainer } from '../SectionContainer';
-import { LogoLink } from '../LogoLink';
+import { LogoLink, LogoLinkProps } from '../LogoLink';
 import { NavLinks } from '../NavLinks';
 import { useState } from 'react';
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close';
+import { MenuLinkProps } from '../MenuLink';
 
-export const Menu = ({ links = [], logoData }) => {
+export type MenuProps = {
+  links?: MenuLinkProps[];
+  logoData: LogoLinkProps;
+};
+
+export const Menu = ({ links = [], logoData }: MenuProps) => {
   const [$visible, setVisible] = useState(false);
   return (
     <>
@@ -33,9 +37,4 @@ export const Menu = ({ links = [], logoData }) => {
       </Styled.Container>
     </>
   );
-};
-
-Menu.propTypes = {
-  ...NavLinks.propTypes,
-  logoData: P.shape(LogoLink.propTypes).isRequired,
 };

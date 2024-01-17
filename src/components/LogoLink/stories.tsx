@@ -1,4 +1,5 @@
-import { LogoLink } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { LogoLink, LogoLinkProps } from '.';
 
 export default {
   title: 'LogoLink',
@@ -8,8 +9,9 @@ export default {
     link: 'https://google.com',
     srcimg: 'assets/images/logo.svg',
   },
-};
-export const LogoImage = (args) => {
+} as Meta;
+
+export const LogoImage: StoryFn<LogoLinkProps> = (args) => {
   return (
     <div>
       <LogoLink {...args} />
@@ -17,7 +19,7 @@ export const LogoImage = (args) => {
   );
 };
 
-export const LogoText = (args) => {
+export const LogoText: StoryFn<LogoLinkProps> = (args) => {
   return (
     <div>
       <LogoLink {...args} />

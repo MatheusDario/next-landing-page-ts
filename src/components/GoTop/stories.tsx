@@ -1,3 +1,4 @@
+import { Meta, StoryFn } from '@storybook/react';
 import { GoTop } from '.';
 
 export default {
@@ -6,8 +7,9 @@ export default {
   args: {
     children: 'GoTop',
   },
-};
-export const Template = (args) => {
+} as Meta<typeof GoTop>;
+
+export const Template: StoryFn = (args) => {
   return (
     <div>
       <GoTop {...args} />

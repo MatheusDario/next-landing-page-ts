@@ -1,4 +1,5 @@
-import { Text } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { Text, TextProps } from '.';
 
 export default {
   title: 'Text',
@@ -11,8 +12,8 @@ export default {
   argTypes: {
     children: { type: 'string' },
   },
-};
-export const Template = (args) => {
+} as Meta;
+export const Template: StoryFn<TextProps> = (args) => {
   return (
     <div>
       <Text {...args} />

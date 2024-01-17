@@ -1,5 +1,12 @@
-import P from 'prop-types';
 import * as Styled from './styled';
+
+export type HeadingProps = {
+  children: React.ReactNode;
+  $colordark?: boolean;
+  $uppercase?: boolean;
+  size?: 'small' | 'medium' | 'big' | 'huge';
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+};
 
 export const Heading = ({
   children,
@@ -7,7 +14,7 @@ export const Heading = ({
   as = 'h1',
   size = 'huge',
   $uppercase = true,
-}) => {
+}: HeadingProps) => {
   return (
     <Styled.Title
       $colordark={$colordark}
@@ -18,12 +25,4 @@ export const Heading = ({
       {children}
     </Styled.Title>
   );
-};
-
-Heading.propTypes = {
-  children: P.node.isRequired,
-  $colordark: P.bool,
-  $uppercase: P.bool,
-  size: P.oneOf(['small', 'medium', 'big', 'huge']),
-  as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
 };

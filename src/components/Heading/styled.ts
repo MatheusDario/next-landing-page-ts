@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { HeadingProps } from '.';
 
 const TitleSize = {
   small: (theme) => css`
@@ -16,7 +17,7 @@ const TitleSize = {
 `,
 };
 
-export const Title = styled.h1`
+export const Title = styled.h1<HeadingProps>`
  ${({ theme, $colordark, size, $uppercase }) => css`
   color: ${$colordark ? theme.colors.blue : theme.colors.white};
   ${TitleSize[size](theme)};

@@ -1,4 +1,5 @@
-import { NavLinks } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { NavLinks, NavLinksProps } from '.';
 import links from './mock';
 
 export default {
@@ -8,10 +9,10 @@ export default {
     links: links,
   },
   argTypes: {
-    links: { type: '' },
+    links: { type: 'string' },
   },
-};
-export const Template = (args) => {
+} as Meta;
+export const Template: StoryFn<NavLinksProps> = (args) => {
   return (
     <div>
       <NavLinks {...args} />

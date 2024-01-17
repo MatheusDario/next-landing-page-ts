@@ -1,4 +1,5 @@
-import { MenuLink } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { MenuLink, MenuLinkProps } from '.';
 
 export default {
   title: 'MenuLink',
@@ -10,8 +11,8 @@ export default {
   argTypes: {
     children: { type: 'string' },
   },
-};
-export const Template = (args) => {
+} as Meta;
+export const Template: StoryFn<MenuLinkProps> = (args) => {
   return (
     <div style={{ display: 'flex' }}>
       <MenuLink {...args} />

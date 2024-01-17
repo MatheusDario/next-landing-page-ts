@@ -1,4 +1,5 @@
-import { Footer } from '.';
+import { Meta, StoryFn } from '@storybook/react';
+import { Footer, FooterProps } from '.';
 
 export default {
   title: 'Footer',
@@ -14,8 +15,9 @@ export default {
     >
   </p>`,
   },
-};
-export const Template = (args) => {
+} as Meta<typeof Footer>;
+
+export const Template: StoryFn<FooterProps> = (args) => {
   return (
     <div>
       <Footer {...args} />

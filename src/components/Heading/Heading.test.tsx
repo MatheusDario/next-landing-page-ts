@@ -18,7 +18,7 @@ describe('<Heading />', () => {
 
   it('should match a snapshot', () => {
     const { container } = renderTheme(<Heading>Texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'Texto' });
+    screen.getByRole('heading', { name: 'Texto' });
 
     expect(container.firstChild).toMatchSnapshot();
   });
@@ -74,7 +74,7 @@ describe('<Heading />', () => {
         Texto
       </Heading>,
     );
-    const heading = screen.getByRole('heading', { name: 'Texto' });
+    screen.getByRole('heading', { name: 'Texto' });
 
     expect(screen.getByRole('heading', { name: 'Texto' })).toHaveStyleRule(
       'font-size',
@@ -105,7 +105,7 @@ describe('<Heading />', () => {
 
   it('should render correct elemente', () => {
     const { container } = renderTheme(<Heading as="h4">Texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'Texto' });
+    screen.getByRole('heading', { name: 'Texto' });
     const h6 = container.querySelector('h4');
 
     expect(h6.tagName.toLowerCase()).toBe('h4');
