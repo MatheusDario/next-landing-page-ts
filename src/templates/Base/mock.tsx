@@ -1,3 +1,4 @@
+import { BaseProps } from '.';
 import { GridSection } from '../../components/GridSection';
 import gridMock from '../../components/GridSection/mock';
 import linksMock from '../../components/NavLinks/mock';
@@ -19,4 +20,4 @@ export const mockBase = {
     link: '#',
   },
   footerHtml: '<p>Teste do footer</p>',
-};
+} as BaseProps;
