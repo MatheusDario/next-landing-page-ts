@@ -1,16 +1,12 @@
-import { App } from '../templates/App';
+import { App, AppProps } from '../templates/App';
 import { loadPages } from '../api/load-pages';
 import { GetStaticProps } from 'next';
 
-export type IndexProps = {
-  data: [];
-};
-
-export default function Index({ data = null }: IndexProps) {
+export default function Index({ data = null }: AppProps) {
   return <App data={data} />;
 }
 
-export const getStaticProps: GetStaticProps<IndexProps> = async () => {
+export const getStaticProps: GetStaticProps<AppProps> = async () => {
   let data = null;
 
   try {
