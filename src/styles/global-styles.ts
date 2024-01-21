@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.font.family.default};
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: ${({ theme }) => theme.font.family.secondary};
+    font-family: ${({ theme }) => theme.font.family.title};
     margin: ${({ theme }) => theme.spacing.large} 0;
   }
   p {
@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: ${({ theme }) => theme.spacing.medium};
   }
   a {
-    color: ${({ theme }) => theme.colors.secondaryColor};
+    color: ${({ theme }) => theme.colors.lightblue};
   }
   .table {
     width: 100%;
