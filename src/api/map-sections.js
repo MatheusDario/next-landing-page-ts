@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-unused-vars */
 export const mapSections = (sections = []) => {
   return sections.map((section) => {
@@ -66,7 +67,6 @@ export const mapSectionContent = (section = {}) => {
 
 export const mapTextGrid = (section = {}) => {
   const {
-    // eslint-disable-next-line no-unused-vars
     __component: component = '',
     title = '',
     description = '',
