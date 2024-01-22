@@ -1,6 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { GridContentProps } from '../components/GridContent';
+import { GridImageElementProps, GridImageProps } from '../components/GridImage';
+import {
+  GridSectionElementProps,
+  GridSectionProps,
+} from '../components/GridSection';
+import { GridTwoColumnsProps } from '../components/GridTwoColumns';
+import { SectionProps } from '../templates/App';
+
 /* eslint-disable no-unused-vars */
-export const mapSections = (sections = []) => {
+export const mapSections = (sections = []): SectionProps[] => {
   return sections.map((section) => {
     if (section.__component === 'section.section-two-columns') {
       return mapSectionTwoColumns(section);
@@ -20,10 +31,13 @@ export const mapSections = (sections = []) => {
         return mapImageGrid(section);
       }
     }
+    return section;
   });
 };
 
-export const mapSectionTwoColumns = (section = {}) => {
+export const mapSectionTwoColumns = (
+  section = {} as any,
+): GridTwoColumnsProps => {
   const {
     __component: component = '',
     title = '',
@@ -45,7 +59,7 @@ export const mapSectionTwoColumns = (section = {}) => {
   };
 };
 
-export const mapSectionContent = (section = {}) => {
+export const mapSectionContent = (section = {} as any): GridContentProps => {
   const {
     __component: component = '',
     title = '',
@@ -65,9 +79,8 @@ export const mapSectionContent = (section = {}) => {
   };
 };
 
-export const mapTextGrid = (section = {}) => {
+export const mapTextGrid = (section = {} as any): GridSectionProps => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     text_grid: grid = [],
@@ -82,7 +95,7 @@ export const mapTextGrid = (section = {}) => {
     title,
     description,
     $background,
-    grid: grid.map((text) => {
+    grid: grid.map((text: any): GridSectionElementProps => {
       const { title = '', description = '' } = text;
 
       return {
@@ -94,9 +107,8 @@ export const mapTextGrid = (section = {}) => {
   };
 };
 
-export const mapImageGrid = (section = {}) => {
+export const mapImageGrid = (section = {} as any): GridImageProps => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     image_grid: grid = [],
@@ -112,18 +124,18 @@ export const mapImageGrid = (section = {}) => {
     description,
     $background,
     $sectionid,
-    grid: grid.map((imgs) => {
+    grid: grid.map((imgs: any) => {
       const {
         images: { data = [] },
       } = imgs;
 
-      const srcImg = data.map((img) => {
+      const srcImg = data.map((img: any) => {
         const { attributes: { url = '' } = {} } = img;
 
         return url;
       });
 
-      const altText = data.map((img) => {
+      const altText = data.map((img: any) => {
         const { attributes: { alternativeText = '' } = {} } = img;
 
         return alternativeText;

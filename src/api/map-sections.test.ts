@@ -21,9 +21,9 @@ describe('map-sections', () => {
 
   it('should map section two columns, predefined if no data', () => {
     const data = mapSectionTwoColumns();
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('');
-    expect(data.sectionid).toBe('');
+    expect(data.$sectionid).toBe('');
     expect(data.srcimg).toBe('');
     expect(data.text).toBe('');
     expect(data.title).toBe('');
@@ -65,13 +65,13 @@ describe('map-sections', () => {
       metada: {
         id: 1,
         name: 'intro',
-        section_id: 'intro',
-        background: true,
+        $section_id: 'intro',
+        $background: true,
       },
     });
-    expect(data.background).toBe(true);
+    expect(data.$background).toBe(true);
     expect(data.component).toBe('section.section-two-columns');
-    expect(data.sectionid).toBe('intro');
+    expect(data.$sectionid).toBe('intro');
     expect(data.srcimg).toBe(
       'https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702163614/barber_63ec0556f4.svg',
     );
@@ -83,10 +83,10 @@ describe('map-sections', () => {
 
   it('should map section content if no data', () => {
     const data = mapSectionContent();
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('');
     expect(data.html).toBe('');
-    expect(data.sectionid).toBe('');
+    expect(data.$sectionid).toBe('');
     expect(data.title).toBe('');
   });
 
@@ -104,20 +104,20 @@ describe('map-sections', () => {
         background: false,
       },
     });
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('section.section-content');
     expect(data.html).toBe(
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quibusdam laborum officiis iste beatae obcaecati repellat, et veritatis provident culpa iusto id sequi corrupti magni repellendus, placeat corporis esse architecto.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sequi facilis, autem, cupiditate consequuntur, rem accusantium impedit nesciunt architecto corporis possimus! Sed laborum veniam quod voluptatem expedita, quasi ratione possimus!\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sunt explicabo dignissimos. Distinctio autem praesentium corporis suscipit nostrum, beatae asperiores reprehenderit quasi ratione, vitae minus iusto ipsa reiciendis et! Obcaecati?',
     );
-    expect(data.sectionid).toBe('top3jobs');
+    expect(data.$sectionid).toBe('top3jobs');
     expect(data.title).toBe('TOP 3 TRABALHOS');
   });
 
   it('should map grid section /or grid text was data', () => {
     const data = mapTextGrid();
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('section.section-grid-text');
-    expect(data.sectionid).toBe('');
+    expect(data.$sectionid).toBe('');
     expect(data.title).toBe('');
     expect(data.description).toBe('');
     expect(data.grid).toEqual([]);
@@ -157,9 +157,9 @@ describe('map-sections', () => {
       ],
       image_grid: [],
     });
-    expect(data.background).toBe(true);
+    expect(data.$background).toBe(true);
     expect(data.component).toBe('section.section-grid-text');
-    expect(data.sectionid).toBe('description');
+    expect(data.$sectionid).toBe('description');
     expect(data.title).toBe('DESCRIÇÃO DOS PRINCIPAIS TRABALHOS');
     expect(data.description).toBe(
       'Uma breve descrição do asunto que está por vim',
@@ -172,9 +172,9 @@ describe('map-sections', () => {
 
   it('should map grid image without data', () => {
     const data = mapImageGrid();
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('section.section-grid-image');
-    expect(data.sectionid).toBe('');
+    expect(data.$sectionid).toBe('');
     expect(data.title).toBe('');
     expect(data.description).toBe('');
     //expect(data.grid).toEqual([]);
@@ -251,12 +251,12 @@ describe('map-sections', () => {
         },
       ],
     });
-    expect(data.background).toBe(false);
+    expect(data.$background).toBe(false);
     expect(data.component).toBe('section.section-grid-image');
-    expect(data.sectionid).toBe('gallery');
+    expect(data.$sectionid).toBe('gallery');
     expect(data.title).toBe('GALERIA');
     expect(data.description).toBe('Breve descrição');
-    expect(data.grid[0].srcImg[1]).toEqual(
+    expect(data.grid[0].srcImg).toEqual(
       'https://res.cloudinary.com/dlsrwvbeo/image/upload/v1702167564/bmw_653b2050bc.jpg',
     );
     expect(data.grid[0].altText[0]).toEqual(null);

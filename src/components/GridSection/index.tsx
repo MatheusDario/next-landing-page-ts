@@ -13,6 +13,7 @@ export type GridSectionProps = {
   description: string;
   $background?: boolean;
   $sectionid?: string;
+  component?: string;
   grid: GridSectionElementProps[];
 };
 

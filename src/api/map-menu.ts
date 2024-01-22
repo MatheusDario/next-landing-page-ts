@@ -1,4 +1,8 @@
-export const mapMenu = (menu = {}) => {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { MenuLinkProps } from '../components/MenuLink';
+import { PageData } from '../templates/App';
+
+export const mapMenu = (menu = {} as any): PageData['menu'] => {
   const {
     logo_link: link = '',
     open_in_new_tab: newtab = false,
@@ -21,8 +25,8 @@ export const mapMenu = (menu = {}) => {
   };
 };
 
-export const mapMenuLinks = (links = []) => {
-  return links.map((item) => {
+export const mapMenuLinks = (links = []): MenuLinkProps[] => {
+  return links.map((item): MenuLinkProps => {
     const {
       url: link = '',
       link_text: children = '',

@@ -9,6 +9,7 @@ export type GridTwoColumnsProps = {
   srcimg: string;
   $background?: boolean;
   $sectionid?: string;
+  component?: string;
 };
 
 export const GridTwoColumns = ({

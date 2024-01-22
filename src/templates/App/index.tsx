@@ -18,12 +18,11 @@ export type PageData = {
   sections: SectionProps[];
 };
 
-export type SectionProps = (
+export type SectionProps =
   | GridImageProps
   | GridSectionProps
   | GridTwoColumnsProps
-  | GridContentProps
-) & { component: string };
+  | GridContentProps;
 
 export type AppProps = {
   data: PageData;
